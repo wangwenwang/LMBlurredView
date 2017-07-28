@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fh6-Ap-xZa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LM" translatesAutoresizingMaskIntoConstraints="NO" id="B45-Yo-FIR"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccw-qE-MUI">
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.45882352939999999" blue="0.14901960780000001" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Rjk-vB-Vvu"/>
+                                    <constraint firstAttribute="width" constant="70" id="zRk-x0-Z8m"/>
+                                </constraints>
+                                <state key="normal" title="模糊"/>
+                                <connections>
+                                    <action selector="blurry" destination="BYZ-38-t0r" eventType="touchUpInside" id="BZJ-49-U7m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="B45-Yo-FIR" secondAttribute="trailing" id="GAc-7o-rra"/>
+                            <constraint firstItem="ccw-qE-MUI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="HSd-5T-IbO"/>
+                            <constraint firstItem="ccw-qE-MUI" firstAttribute="centerX" secondItem="Fh6-Ap-xZa" secondAttribute="centerX" id="NWn-vA-0iA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B45-Yo-FIR" secondAttribute="bottom" id="ZCY-ji-f2l"/>
+                            <constraint firstItem="B45-Yo-FIR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="izi-iU-hVu"/>
+                            <constraint firstItem="B45-Yo-FIR" firstAttribute="leading" secondItem="Fh6-Ap-xZa" secondAttribute="leading" id="qdq-Pp-1pZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LM" width="320" height="568"/>
+    </resources>
+</document>
