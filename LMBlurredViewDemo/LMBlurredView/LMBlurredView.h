@@ -8,7 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol LMBlurredViewDelegate <NSObject>
+
+@optional
+- (void)LMBlurredViewClear;
+
+@end
+
 @interface LMBlurredView : UIView
+
+
+@property (weak, nonatomic) id <LMBlurredViewDelegate> delegate;
 
 // 模糊前景色
 @property (strong, nonatomic) UIColor *foregroundColor;
