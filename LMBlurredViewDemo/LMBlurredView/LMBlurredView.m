@@ -107,4 +107,10 @@
     }];
 }
 
+
+- (void)blurredOnclick {
+    
+    [self clear];
+}
+
 @end
