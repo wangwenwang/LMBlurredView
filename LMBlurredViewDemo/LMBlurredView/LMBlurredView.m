@@ -99,15 +99,6 @@
 }
 
 
-- (void)blurredOnclick {
-    
-    if([_delegate respondsToSelector:@selector(LMBlurredViewClear)]) {
-        
-        [_delegate LMBlurredViewClear];
-    }
-}
-
-
 - (void)clear {
     
     [UIView animateWithDuration:0.3 animations:^{

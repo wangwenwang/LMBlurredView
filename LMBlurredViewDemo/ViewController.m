@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "LMBlurredView.h"
 
-@interface ViewController ()<LMBlurredViewDelegate>
+@interface ViewController ()
 
 // 模糊背景
 @property (strong, nonatomic) LMBlurredView *blurredView;
@@ -35,18 +35,6 @@
     // 虚化背景
     _blurredView = [[LMBlurredView alloc] init];
     [_blurredView blurry:5.1];
-    
-    _blurredView.delegate = self;
 }
-
-
-#pragma mark - LMBlurredViewDelegate
-
-- (void)LMBlurredViewClear {
-    
-    // 解除模糊
-    [_blurredView clear];
-}
-
 
 @end
